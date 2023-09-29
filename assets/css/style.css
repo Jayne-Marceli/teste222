@@ -3,9 +3,9 @@
 :root {
     --color-body: #b6cbc6;
     --color-heading: #eef3db;
-    --color-base: #b34db2;
+    --color-base: rgba(4, 60, 70);
     --color-base2: rgba(3, 63, 71,0.8);
-    --color-brand: rgb(225, 231, 165);
+    --color-brand: rgb(214, 226, 80);
     --color-brand2: #66cc66;
     --sidbar-width: 240px;
     --font-base: "Bai jamjure";
@@ -32,7 +32,19 @@ a:hover {
 img{
     width: 100%;
 }
+.text-brand{
+    color: var(--color-brand);
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 /* NAVBAR */
+.navbar{
+    background-color: var(--color-base);
+}
 .navbar .nav-link{
     font-weight: 700;
     text-transform: uppercase;
@@ -53,5 +65,9 @@ img{
     .navbar-brand img {
         border: 8px solid var(--color-brand);
 
+    }
+    /*container*/
+    #container{
+        padding-left: var(--sidbar-width);
     }
 }
